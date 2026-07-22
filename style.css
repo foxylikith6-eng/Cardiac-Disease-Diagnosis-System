@@ -1,0 +1,408 @@
+/* Google Font */    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');    
+    
+*{    
+    margin:0;    
+    padding:0;    
+    box-sizing:border-box;    
+    font-family:'Poppins',sans-serif;    
+}    
+    
+body{    
+    background:#f5f9ff;    
+    color:#333;    
+}    
+    
+/* ================= NAVBAR ================= */    
+    
+nav{    
+    width:100%;    
+    height:80px;    
+    background:#0f62fe;    
+    display:flex;    
+    justify-content:space-between;    
+    align-items:center;    
+    padding:0 8%;    
+    position:sticky;    
+    top:0;    
+    z-index:1000;    
+}    
+    
+.logo{    
+    color:white;    
+    font-size:28px;    
+    font-weight:700;    
+}    
+    
+nav ul{    
+    list-style:none;    
+    display:flex;    
+}    
+    
+nav ul li{    
+    margin-left:30px;    
+}    
+    
+nav ul li a{    
+    color:white;    
+    text-decoration:none;    
+    font-weight:500;    
+    transition:.3s;    
+}    
+    
+nav ul li a:hover{    
+    color:#ffd43b;    
+}    
+    
+/* ================= HERO ================= */    
+    
+.hero{    
+    display:flex;    
+    justify-content:space-between;    
+    align-items:center;    
+    min-height:90vh;    
+    padding:70px 8%;    
+}    
+    
+.left{    
+    width:50%;    
+}    
+    
+.left h1{    
+    font-size:48px;    
+    color:#0f62fe;    
+    margin-bottom:20px;    
+}    
+    
+.left p{    
+    font-size:18px;    
+    line-height:30px;    
+    margin-bottom:30px;    
+}    
+    
+.btn{    
+    display:inline-block;    
+    background:#0f62fe;    
+    color:white;    
+    text-decoration:none;    
+    padding:15px 35px;    
+    border-radius:50px;    
+    transition:.3s;    
+}    
+    
+.btn:hover{    
+    background:#0844a4;    
+    transform:translateY(-3px);    
+}    
+    
+.right{    
+    width:45%;    
+}    
+    
+.right img{    
+    width:100%;    
+    animation:float 3s infinite;    
+}    
+    
+@keyframes float{    
+    0%{transform:translateY(0);}    
+    50%{transform:translateY(-12px);}    
+    100%{transform:translateY(0);}    
+}    
+    
+/* ================= FEATURES ================= */    
+    
+.features{    
+    display:grid;    
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));    
+    gap:30px;    
+    padding:70px 8%;    
+}    
+    
+.card{    
+    background:white;    
+    padding:40px;    
+    border-radius:20px;    
+    text-align:center;    
+    box-shadow:0 10px 25px rgba(0,0,0,.08);    
+    transition:.3s;    
+}    
+    
+.card:hover{    
+    transform:translateY(-10px);    
+}    
+    
+.card i{    
+    font-size:50px;    
+    color:#0f62fe;    
+    margin-bottom:20px;    
+}    
+    
+.card h3{    
+    margin-bottom:15px;    
+}    
+    
+/* ================= STATS ================= */    
+    
+.stats{    
+    display:flex;    
+    justify-content:space-around;    
+    background:#0f62fe;    
+    color:white;    
+    padding:60px;    
+    text-align:center;    
+}    
+    
+.stats h2{    
+    font-size:42px;    
+}    
+    
+.stats p{    
+    margin-top:10px;    
+}    
+    
+/* ================= FOOTER ================= */    
+    
+footer{    
+    background:#111827;    
+    color:white;    
+    text-align:center;    
+    padding:20px;    
+}    
+    
+/* ================= MOBILE ================= */    
+    
+@media(max-width:768px){    
+    
+nav{    
+    flex-direction:column;    
+    height:auto;    
+    padding:20px;    
+}    
+    
+nav ul{    
+    margin-top:15px;    
+    flex-direction:column;    
+    align-items:center;    
+}    
+    
+nav ul li{    
+    margin:10px 0;    
+}    
+    
+.hero{    
+    flex-direction:column;    
+    text-align:center;    
+}    
+    
+.left,    
+.right{    
+    width:100%;    
+}    
+    
+.left h1{    
+    font-size:36px;    
+}    
+    
+.right{    
+    margin-top:40px;    
+}    
+    
+.stats{    
+    flex-direction:column;    
+    gap:30px;    
+}    
+}    
+    
+/* Existing CSS */    
+    
+/* Navbar */    
+/* Hero */    
+/* Features */    
+/* Stats */    
+/* Footer */    
+/* Mobile */    
+    
+/* ---------------- Prediction Page ---------------- */    
+    
+.prediction{    
+    padding:60px 8%;    
+}    
+    
+.prediction h1{    
+    text-align:center;    
+    margin-bottom:40px;    
+    color:#0f62fe;    
+}    
+    
+.form-grid{    
+    display:grid;    
+    grid-template-columns:repeat(2,1fr);    
+    gap:20px;    
+}    
+    
+.form-grid input,    
+.form-grid select{    
+    padding:15px;    
+    border:1px solid #ccc;    
+    border-radius:10px;    
+    font-size:16px;    
+    outline:none;    
+}    
+    
+.form-grid input:focus,    
+.form-grid select:focus{    
+    border:2px solid #0f62fe;    
+}    
+    
+.prediction button{    
+    margin-top:30px;    
+    width:100%;    
+    padding:18px;    
+    font-size:18px;    
+    border:none;    
+    cursor:pointer;    
+}    
+    
+@media(max-width:768px){    
+    .form-grid{    
+        grid-template-columns:1fr;    
+    }    
+}
+
+
+/* ================= ABOUT PAGE ================= */
+
+.about-page{
+    padding:70px 8%;
+}
+
+.about-container{
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-container h1{
+    color:#0f62fe;
+    margin-bottom:25px;
+    font-size:42px;
+}
+
+.about-container p{
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:25px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.about-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+}
+
+.about-card i{
+    font-size:45px;
+    color:#0f62fe;
+    margin-bottom:20px;
+}
+
+/* ================= CONTACT PAGE ================= */
+
+.contact-page{
+    padding:70px 8%;
+}
+
+.contact-container{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.contact-container h1{
+    font-size:42px; 
+    color:#0f62fe;
+    margin-bottom:20px;
+}
+
+.contact-container > p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+/* ================= CONTACT CARD ================= */
+
+.contact-card{
+    max-width:760px;
+    margin:40px auto;
+    background:#fff;
+    padding:45px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+/* Each Row */
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:8px;          /* small gap between icon and text */
+    margin:18px 0;
+}
+
+/* Icons */
+
+.contact-item i{
+    color:#0f62fe;
+    font-size:22px;
+    width:28px;       /* equal width for all icons */
+    text-align:center;
+    flex-shrink:0;
+}
+
+/* Label */
+
+.contact-item strong{
+    font-size:18px;
+    font-weight:600;
+    margin-right:6px;   /* only a small space after ':' */
+}
+
+/* Value */
+
+.contact-item span,
+.contact-item a{
+    font-size:18px;
+}
+
+.contact-item a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+.contact-item a:hover{
+    text-decoration:underline;
+}
+
+/* Privacy */
+
+.privacy-note{
+    margin-top:35px;
+    text-align:center;
+    line-height:1.8;
+    font-size:18px;
+}
+
